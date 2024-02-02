@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-extension-reloader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Companion package to 'Extension Development Auto-Reloader' browser extension, to automatically reload target browser extensions during the extension development process. ",
   "main": "index.js",
   "type": "module",
