@@ -4,6 +4,8 @@ Extension auto reloader is an extension and npm package combination that automat
 
 It requires a websocket connection to do so, which you setup with this npm package.
 
+![Automatic extension reloading](https://github.com/con-dog/extension-reloader-plugin/blob/main/media/1.png)
+
 ## Project Structure and running
 
 1. In your "src" directory make a new subfolder "extension" and put your extension files in there. Your manifest.json, serviceWorker.ts and contentScript/s.ts files should be in there and other static assets like icons. Yes we are using typescript.
@@ -129,7 +131,7 @@ dist
 
 7. Now connect the extension auto reloader browser extension to the websocket server:
 
-![extension auto reloader](https://github.com/con-dog/extension-reloader-plugin/blob/main/media/stopped.png)
+![https://github.com/con-dog/extension-reloader-plugin/blob/main/media/stopped.png](https://github.com/con-dog/extension-reloader-plugin/blob/main/media/2.png)
 
 You can get your unpacked extensions ID from the manage extensions page in chrome: chrome://extensions/
 
@@ -142,6 +144,5 @@ Then enter the required information and hit run:
 Now whenever you make changes to your code, your extension will auto reload itself without you needing to do anything
 
 To stop simply press stop:
-
-![extension info entered](https://github.com/con-dog/extension-reloader-plugin/blob/main/media/running.png)
+![https://github.com/con-dog/extension-reloader-plugin/blob/main/media/3.png](https://github.com/con-dog/extension-reloader-plugin/blob/main/media/3.png)
 
