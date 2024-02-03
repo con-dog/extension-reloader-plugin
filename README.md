@@ -4,7 +4,7 @@ Extension auto reloader is an extension and npm package combination that automat
 
 It requires a websocket connection to do so, which you setup with this npm package.
 
-![Automatic extension reloading](https://github.com/con-dog/extension-reloader-plugin/blob/main/media/1.png)
+![Automatic extension reloading](https://github.com/con-dog/extension-reloader-plugin/blob/b7af83f28434486fce534f61e6c9b22cc5144ef2/media/1.png)
 
 ## Project Structure and running
 
@@ -131,18 +131,18 @@ dist
 
 7. Now connect the extension auto reloader browser extension to the websocket server:
 
-![https://github.com/con-dog/extension-reloader-plugin/blob/main/media/stopped.png](https://github.com/con-dog/extension-reloader-plugin/blob/main/media/2.png)
+![https://github.com/con-dog/extension-reloader-plugin/blob/main/media/stopped.png](https://github.com/con-dog/extension-reloader-plugin/blob/b7af83f28434486fce534f61e6c9b22cc5144ef2/media/2.png)
 
 You can get your unpacked extensions ID from the manage extensions page in chrome: chrome://extensions/
 
-![extension ID](https://github.com/con-dog/extension-reloader-plugin/blob/main/media/example-extension.png)
+![extension ID](https://github.com/con-dog/extension-reloader-plugin/blob/b7af83f28434486fce534f61e6c9b22cc5144ef2/media/example-extension.png)
 
 Then enter the required information and hit run:
 
-![extension info entered](https://github.com/con-dog/extension-reloader-plugin/blob/main/media/enter-info.png)
+![extension info entered](https://github.com/con-dog/extension-reloader-plugin/blob/b7af83f28434486fce534f61e6c9b22cc5144ef2/media/enter-info.png)
 
 Now whenever you make changes to your code, your extension will auto reload itself without you needing to do anything
 
 To stop simply press stop:
-![https://github.com/con-dog/extension-reloader-plugin/blob/main/media/3.png](https://github.com/con-dog/extension-reloader-plugin/blob/main/media/3.png)
+![https://github.com/con-dog/extension-reloader-plugin/blob/main/media/3.png](https://github.com/con-dog/extension-reloader-plugin/blob/b7af83f28434486fce534f61e6c9b22cc5144ef2/media/3.png)
 
