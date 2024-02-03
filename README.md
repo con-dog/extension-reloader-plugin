@@ -6,14 +6,19 @@ It requires a websocket connection to do so, which you setup with this npm packa
 
 ## Project Structure and running
 
-1. In your "src" directory make a new subfolder "extension" and put your extension files in there. Your manifest.json, serviceWorker.ts and contentScript/s.ts files should be in there. Yes we are using typescript.
+1. In your "src" directory make a new subfolder "extension" and put your extension files in there. Your manifest.json, serviceWorker.ts and contentScript/s.ts files should be in there and other static assets like icons. Yes we are using typescript.
 
 ```bash
 src
 ├── extension
-│   ├── manifest.json
-│   ├── serviceWorker.ts
-│   ├── contentScript.ts
+    ├── manifest.json
+    ├── serviceWorker.ts
+    ├── contentScript.ts
+    ├── icons
+        ├── icon16.png
+        ├── icon32.png
+        ├── icon48.png
+        ├── icon128.png
 ```
 
 2. Now add a new script to your package json to run your Vite Build step in watch mode. You cannot make an extension work in dev mode, as the unpacked extension requires generated files. Hence we use build mode:
@@ -114,6 +119,11 @@ dist
 ├── contentScript.js
 ├── main.js
 ├── index.html
+├── icons
+    ├── icon16.png
+    ├── icon32.png
+    ├── icon48.png
+    ├── icon128.png
 ... others
 ```
 
@@ -134,3 +144,7 @@ Now whenever ou make changes to your code, your extension will auto reload itsel
 To stop simply press stop:
 
 ![extension info entered](media/running.png)
+
+```
+
+```
