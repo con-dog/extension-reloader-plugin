@@ -1,4 +1,5 @@
 import { readFileSync } from "fs";
+import glob from "glob";
 import WebSocket from "ws";
 
 export function extensionReloaderBuildStep(manifestPath) {
@@ -47,6 +48,23 @@ export function extensionReloaderWebSocket(options = {}) {
       ws.onclose = () => {
         console.log("websocket (vite) closed");
       };
+    },
+  };
+}
+
+export function extensionReloaderWatchExternal(targetSrc) {
+  return {
+    name: "vite-extension-reloader-watch-external",
+    async buildStart() {
+      glob(targetSrc, (err, files) => {
+        if (err) {
+          console.error(err);
+          return;
+        }
+        for (let file of files) {
+          this.addWatchFile(file);
+        }
+      });
     },
   };
 }

@@ -36,14 +36,29 @@ import {
   extensionReloaderBuildStep,
   extensionReloaderWebSocket,
 } from "vite-plugin-extension-reloader";
+import copy from "rollup-plugin-copy";  // Highly recommended for copying static assets like icons
 ...
 
 export default defineConfig({
  plugins: [
     // Your existing Vite plugins
     ...
-    extensionReloaderBuildStep("./src/extension/manifest.json"),
+    extensionReloaderBuildStep("src/extension/manifest.json"),
+    extensionReloaderWatchExternal("src/extension/**/*")  // This is optional, but will watch for changes in your manifest
     extensionReloaderWebSocket(),
+    ...
+    copy({
+      targets: [
+        // Use glob patterns to match static files to copy
+        {
+          src: "src/extension/*",
+          dest: "dist",
+          ignore: ["**/*.js", "**/*.ts", "**/manifest.json"],
+        },
+      ],
+      copyOnce: false,
+      flatten: true,
+    }),
   ],
   // Your existing config
   ...
