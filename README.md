@@ -129,22 +129,19 @@ dist
 
 7. Now connect the extension auto reloader browser extension to the websocket server:
 
-![extension auto reloader](media/stopped.png)
+![extension auto reloader](https://github.com/con-dog/extension-reloader-plugin/blob/main/media/stopped.png)
 
 You can get your unpacked extensions ID from the manage extensions page in chrome: chrome://extensions/
 
-![extension ID](media/example-extension.png)
+![extension ID](https://github.com/con-dog/extension-reloader-plugin/blob/main/media/example-extension.png)
 
 Then enter the required information and hit run:
 
-![extension info entered](media/enter-info.png)
+![extension info entered](https://github.com/con-dog/extension-reloader-plugin/blob/main/media/enter-info.png)
 
-Now whenever ou make changes to your code, your extension will auto reload itself without you needing to do anything
+Now whenever you make changes to your code, your extension will auto reload itself without you needing to do anything
 
 To stop simply press stop:
 
-![extension info entered](media/running.png)
+![extension info entered](https://github.com/con-dog/extension-reloader-plugin/blob/main/media/running.png)
 
-```
-
-```
