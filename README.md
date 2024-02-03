@@ -6,6 +6,10 @@ It requires a websocket connection to do so, which you setup with this npm packa
 
 ![Automatic extension reloading](https://github.com/con-dog/extension-reloader-plugin/blob/b7af83f28434486fce534f61e6c9b22cc5144ef2/media/1.png)
 
+## Simple Example - Changes to a ts content script reloads and re-runs the given extension
+
+![content script example](https://github.com/con-dog/extension-reloader-plugin/blob/3021e1f64e3b7a96102b9acfcbba2070e863388c/media/extension-reloader-ezgif.com-video-to-gif-converter.gif)
+
 ## Project Structure and running
 
 1. In your "src" directory make a new subfolder "extension" and put your extension files in there. Your manifest.json, serviceWorker.ts and contentScript/s.ts files should be in there and other static assets like icons. Yes we are using typescript.
