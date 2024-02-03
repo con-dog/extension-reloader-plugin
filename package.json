@@ -1,19 +1,20 @@
 {
   "name": "vite-plugin-extension-reloader",
-  "version": "1.0.1",
-  "description": "Companion package to 'Extension Development Auto-Reloader' browser extension, to automatically reload target browser extensions during the extension development process. ",
+  "version": "1.0.8",
+  "description": "Companion package to 'Extension Development - Auto Reloader' chrome extension, to automatically reload target browser extensions during the extension development process.",
   "main": "index.js",
   "type": "module",
   "bin": {
     "wss-ext-reloader": "./wss-ext-reloader.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "extensions",
+    "chrome extensions",
+    "browser extensions",
+    "development",
     "chrome",
     "websockets",
+    "service workers",
     "vite",
     "reload",
     "browser",
@@ -23,8 +24,9 @@
     "vite": "^4 || ^5"
   },
   "dependencies": {
-    "ws": "^8.16.0",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "vite-plugin-extension-reloader": "^1.0.5",
+    "ws": "^8.16.0"
   },
   "author": "Papillon Software",
   "license": "ISC"

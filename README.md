@@ -41,6 +41,7 @@ src
 ...
 import {
   extensionReloaderBuildStep,
+  extensionReloaderWatchExternal,
   extensionReloaderWebSocket,
 } from "vite-plugin-extension-reloader";
 import copy from "rollup-plugin-copy";  // Highly recommended for copying static assets like icons
@@ -51,7 +52,7 @@ export default defineConfig({
     // Your existing Vite plugins
     ...
     extensionReloaderBuildStep("src/extension/manifest.json"),
-    extensionReloaderWatchExternal("src/extension/**/*")  // This is optional, but will watch for changes in your manifest
+    extensionReloaderWatchExternal("src/extension/**/*"),  // This is optional, but will watch for changes in your manifest
     extensionReloaderWebSocket(),
     ...
     copy({
@@ -145,4 +146,3 @@ Now whenever you make changes to your code, your extension will auto reload itse
 
 To stop simply press stop:
 ![https://github.com/con-dog/extension-reloader-plugin/blob/main/media/3.png](https://github.com/con-dog/extension-reloader-plugin/blob/b7af83f28434486fce534f61e6c9b22cc5144ef2/media/3.png)
-
