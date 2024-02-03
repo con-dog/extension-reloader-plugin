@@ -1,4 +1,4 @@
-# Extension Auto Reloader
+# Extension Development - Auto Reloader
 
 Extension auto reloader is an extension and npm package combination that automatically reloads your unpacked chrome extension when you save changes to your files during development.
 
